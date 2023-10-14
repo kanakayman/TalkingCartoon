@@ -1,0 +1,83 @@
+.wrapper{
+    display: grid;
+    grid-template-columns:repeat(4, 1fr);
+    column-gap: 1em;
+    row-gap: 1em;
+    
+}
+
+.title{
+    background-color: red;
+    color: white;
+    border: 2px solid black;  
+    grid-column: 1/ 8;
+    display: grid;
+    place-content: center;
+}
+
+
+.edit{
+    background-color: blue;
+    color: white;
+    border: 2px solid black; 
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 35;
+    
+}
+
+.animation{
+    background-color: #dbdad7;
+    color: white;
+    border: 2px solid black;
+    position: relative;
+    grid-column-start: 2;
+    grid-column-end: 8; 
+    grid-row-start: 2;
+    grid-row-end: 35;
+
+/* Center the child elements */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.textInput{
+    background-color: green;
+    color: white;
+    border: 2px solid black;
+    grid-column-start: 1;
+    grid-column-end: 4; 
+    grid-row-start: 36;
+    grid-row-end: 50;
+    
+}
+
+.audio{
+    background-color: green;
+    color: white;
+    border: 2px solid black;
+    grid-column-start: 4;
+    grid-column-end: 8; 
+    grid-row-start: 36;
+    grid-row-end: 50;
+}
+
+#text {
+    width: 90%;
+    height: 80px;
+    resize: vertical;
+    
+  }
+
+  .sprite-animation {
+    background-image: url('FaceSprite/SpriteSheet/boyface1/boyface1.png');
+    background-repeat: no-repeat;
+    width: 163px; /* the width of a single sprite frame */
+    height: 160px; /* the height of a single sprite frame */
+    background-position: 0 0;
+    /* Scale the sprite animation */
+    transform: scale(1.3); /* Adjust the scale value to control the size of the animation */
+  }

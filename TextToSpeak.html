@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TextToSpeak</title>
+
+    <link rel="stylesheet" href="TextToSpeak.css">
+
+</head>
+<body>
+    
+    <div class="wrapper">
+
+    <section class="title">
+        <h1>Text To Speak</h1>
+    </section>
+
+    <section class="edit">
+        <h2>Edit menu</h2>
+        <label for="spriteSheetSelect">Select sprite sheet:</label>
+        <select id="spriteSheetSelect">
+          <option value="boyface1.png">Boy Face 1</option>
+          <option value="boyface2.png">Boy Face 2</option>
+          <option value="girlface1.png">Girl Face 1</option>
+          <!-- Add more sprite sheet options here -->
+        </select>
+      </section>
+
+    <section class="animation">
+      <h2>Animation Section</h2>
+      <div id="sprite-container"></div>
+    </section>
+
+    <section class="textInput">
+        <h2>Text</h2>
+        <input type="text" id="text" placeholder="Type something here" />
+        <select id="voiceSelect"></select>
+        <button id="speak">Speak</button>
+    
+      </section>
+
+      <section class="audio">
+        <h2>Audio</h2>
+        <div>
+            Pitch: <input type="range" id="pitch" min="0.1" max="2" step="0.1" value="1">
+          </div>
+          <div>
+            Rate: <input type="range" id="rate" min="0.1" max="2" step="0.1" value="1">
+          </div>
+      </section>
+
+    <section>
+        <script src="TextToSpeak.js"></script>
+    </section>
+
+    </div>      
+
+</body>
+</html>
